@@ -190,7 +190,7 @@ const [bins, setBins] = useState({
             <Marker
             icon={{
               path:
-              bins.bins[id-1].type=="recycle"? recycle:Logo,
+              bins.bins[id-1].type=="recycle"? recycle:'https://raw.githubusercontent.com/ebtesam25/ideahacks2022/main/app/src/assets/green.png',
               fillColor: bins.bins[id-1].level>90 ? binFull:(bins.bins[id-1].level>75 ? binAlmostFull:binEmpty),
               fillOpacity: 1,
               scale: 0.5,

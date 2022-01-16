@@ -114,15 +114,8 @@ const [bins, setBins] = useState({
         <>
         {bins.bins.map((item, i) => (
             <Marker
-            icon={{
-              path:
-              item.type=="recycle"? recycle:bin,
-              fillColor: item.level>90 ? binFull:(item.level>75 ? binAlmostFull:binEmpty),
-              fillOpacity: 1,
-              scale: 0.5,
-              strokeColor: "none",
-              strokeWeight: 0,
-            }}
+            icon={'https://raw.githubusercontent.com/ebtesam25/ideahacks2022/main/app/src/assets/green.png'}
+            
             position={{lat:parseFloat(item.lat),lng: parseFloat(item.lng)}}
           />
 
