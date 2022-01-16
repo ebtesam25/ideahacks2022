@@ -10,8 +10,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 34.0689,
-  lng: -118.4452
+  lat: 34.06999972,
+  lng: -118.439789907
 };
 
 
@@ -110,7 +110,7 @@ const [bins, setBins] = useState({
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={20}
+        zoom={5}
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
