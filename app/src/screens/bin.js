@@ -101,6 +101,7 @@ const [bins, setBins] = useState({
       axios(config)
       .then(function (response) {
         console.log(JSON.stringify(response.data));
+        setBins(response.data)
       })
       .catch(function (error) {
         console.log(error);
@@ -118,6 +119,7 @@ const [bins, setBins] = useState({
       axios(config)
       .then(function (response) {
         console.log(JSON.stringify(response.data));
+        setBins(response.data)
       })
       .catch(function (error) {
         console.log(error);
@@ -136,7 +138,7 @@ const [bins, setBins] = useState({
   
 
   useEffect(() => {
-    _getBinInfo();
+  
   });
 
   return isLoaded ? (
