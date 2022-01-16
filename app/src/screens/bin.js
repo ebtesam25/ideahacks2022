@@ -134,6 +134,7 @@ const [bins, setBins] = useState({
   const binEmpty = "rgb(18.039216%,80.000001%,44.313726%)"
   const binFull = "rgb(90.588236%,29.803923%,23.529412%)"
 
+
   const {id} = useParams();
   
 
@@ -189,7 +190,7 @@ const [bins, setBins] = useState({
             <Marker
             icon={{
               path:
-              bins.bins[id-1].type=="recycle"? recycle:bin,
+              bins.bins[id-1].type=="recycle"? recycle:Logo,
               fillColor: bins.bins[id-1].level>90 ? binFull:(bins.bins[id-1].level>75 ? binAlmostFull:binEmpty),
               fillOpacity: 1,
               scale: 0.5,
