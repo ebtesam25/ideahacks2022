@@ -9,9 +9,9 @@ import Bins from "./screens/bin";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router  basename="/ideahacks2022">
       <Routes>
-        <Route path="/" element={<BinMap />} />
+        <Route path="/map" element={<BinMap />} />
         <Route path="/bin/:id" element={<Bins />} />
       </Routes>
       </Router>
